@@ -1,0 +1,319 @@
+/* AtmMachine.css */
+
+.atm-dashboard {
+  min-height: 100vh;
+  background-color: #0b0f19;
+  color: #f8fafc;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.atm-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.bank-brand h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.bank-brand span {
+  color: #38bdf8;
+}
+
+.user-profile-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0f172a;
+  padding: 6px 16px 6px 8px;
+  border-radius: 50px;
+  border: 1px solid #334155;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #38bdf8;
+  color: #0b0f19;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-action-btn {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logout-action-btn:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.atm-grid-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 40px auto;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .atm-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.atm-main-card,
+.atm-history-card {
+  background-color: #1e293b;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  padding: 30px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.balance-overview-card {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+.balance-amount {
+  font-size: 36px;
+  margin-top: 6px;
+  font-weight: 700;
+}
+
+.feedback-banner {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  background-color: #0f172a;
+  border: 1px solid #475569;
+}
+
+.tab-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: #0f172a;
+  border: 1px solid #475569;
+  color: #94a3b8;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn.active-deposit {
+  background: #059669;
+  border-color: #059669;
+  color: white;
+}
+
+.tab-btn.active-withdraw {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: white;
+}
+
+.input-field-group label {
+  display: block;
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.currency-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 0 14px;
+}
+
+.currency-input-wrapper span {
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+.currency-input-wrapper input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}
+
+.quick-cash-section {
+  margin-top: 16px;
+}
+
+.quick-cash-section small {
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.quick-cash-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.quick-cash-grid button {
+  background: #0f172a;
+  border: 1px solid #475569;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quick-cash-grid button:hover {
+  background: #334155;
+}
+
+.submit-action-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.submit-action-btn.deposit {
+  background-color: #059669;
+}
+
+.submit-action-btn.withdraw {
+  background-color: #dc2626;
+}
+
+.submit-action-btn:hover {
+  opacity: 0.9;
+}
+
+.atm-history-card h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+}
+
+.history-list-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #475569;
+}
+
+.history-item.item-in {
+  border-left-color: #059669;
+}
+
+.history-item.item-out {
+  border-left-color: #dc2626;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-type {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.h-date {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.h-amount {
+  font-weight: 600;
+  font-size: 14px;
+}
+/* Additions for 3-Tab Layout & Airtime */
+.tab-selector.three-tabs {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tab-btn.active-airtime {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: white;
+}
+
+.submit-action-btn.airtime {
+  background-color: #0284c7;
+}
+
+.network-select {
+  width: 100%;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.airtime-specific-fields {
+  margin-top: 12px;
+}

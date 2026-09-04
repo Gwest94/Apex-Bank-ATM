@@ -18,13 +18,13 @@ A full-stack, cloud-powered virtual ATM and fintech application built using **Re
 ## 📸 Application Screenshots
 
 ### User Dashboard & Live Activity Stream
-![Dashboard](screenshots/apex-bank-user-profile.PNG)
+![Dashboard](screenshots/apex bank user profile.PNG).
 
 ### Account Verification & Secure Transfer Modal
-![Transfer](screenshots/account-verification-before-transfer.PNG)
+![Transfer](screenshots/account verification before transfer.PNG)
 
 ### Bill Payment & Utility Module
-![Bill Payment](screenshots/bill-payment-modal.PNG)
+![Bill Payment](screenshots/successful bill payment apex.PNG)
 
 ## 🚀 How to Run Locally
 
